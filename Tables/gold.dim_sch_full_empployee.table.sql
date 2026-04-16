@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS gold.dim_sch_full_empployee
+CREATE TABLE gold.dim_sch_full_empployee(
+id INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+Name NVARCHAR(50) NOT NULL,
+GroupName NVARCHAR(50) NOT NULL,
+Name_Shoft NVARCHAR(50) NOT NULL,
+LoginID NVARCHAR(50) NOT NULL,
+JobTitle NVARCHAR(50) NOT NULL,
+SickLeaveHours INT NOT NULL,
+last_update DATETIME DEFAULT GETDATE()
+)
+
